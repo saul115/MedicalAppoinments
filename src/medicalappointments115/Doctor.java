@@ -11,14 +11,15 @@ package medicalappointments115;
  */
 public class Doctor {
     
-    int id;
+    static int id = 0;
     String name;
     String speciality;
     
-    Doctor() {}
+    Doctor() { id++; }
     
     Doctor(String name){
         System.out.println("The Doctor's name is: " + name);
+        id++;
     }
     
     //Behaviours
@@ -26,4 +27,11 @@ public class Doctor {
     {
         System.out.println(name);
     }
+    
+    public  void showId()
+    {
+        System.out.println("The Doctor's ID is: " + id);   
+    }
+    
+    
 }

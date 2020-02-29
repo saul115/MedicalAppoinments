@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package medicalappointments115;
+import static medicalappointments115.UI.UIMenu.*;
+import java.util.Scanner;
 
 
 
@@ -17,10 +19,18 @@ public class MedicalAppointments115 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         Doctor myDoctor  = new Doctor("Saul Augusto");
+         Doctor myDoctor  = new Doctor();
          myDoctor.name = "Saul Gasca";
          myDoctor.showName();
+         myDoctor.showId();
+         System.out.println(Doctor.id);
          
+         Doctor myDoctor2 = new Doctor("Ernesto");
+         myDoctor2.showId();
+         System.out.println(Doctor.id);
+         
+         showMenu();
+                 
     }
     
 }
