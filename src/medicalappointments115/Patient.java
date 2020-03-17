@@ -122,6 +122,7 @@ public class Patient {
      * @param phoneNumber the phoneNumber to set
      */
     public void setPhoneNumber(String phoneNumber) {
+        
         if(phoneNumber.length() > 8)
         {
             System.out.println("The Phone number cannot contain more than 8 digits");
